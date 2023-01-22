@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faked_sms_sending", "Faked_sms_sending\Faked_sms_sending.csproj", "{E200B373-F9FC-4335-977E-661CB77A7700}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakedSmsSending.ReactApp", "FakedSmsSending.ReactApp\FakedSmsSending.ReactApp.csproj", "{8B98495E-AC7A-462E-9546-785700C7E2BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E200B373-F9FC-4335-977E-661CB77A7700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E200B373-F9FC-4335-977E-661CB77A7700}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E200B373-F9FC-4335-977E-661CB77A7700}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E200B373-F9FC-4335-977E-661CB77A7700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B98495E-AC7A-462E-9546-785700C7E2BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B98495E-AC7A-462E-9546-785700C7E2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B98495E-AC7A-462E-9546-785700C7E2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B98495E-AC7A-462E-9546-785700C7E2BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
