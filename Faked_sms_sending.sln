@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakedSmsSending.ReactApp", "FakedSmsSending.ReactApp\FakedSmsSending.ReactApp.csproj", "{8B98495E-AC7A-462E-9546-785700C7E2BB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakedSmsSending.WebApi", "FakedSmsSending.WebApi\FakedSmsSending.WebApi.csproj", "{32084132-D724-4312-A2A0-AED187802B33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8B98495E-AC7A-462E-9546-785700C7E2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B98495E-AC7A-462E-9546-785700C7E2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B98495E-AC7A-462E-9546-785700C7E2BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32084132-D724-4312-A2A0-AED187802B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32084132-D724-4312-A2A0-AED187802B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32084132-D724-4312-A2A0-AED187802B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32084132-D724-4312-A2A0-AED187802B33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
