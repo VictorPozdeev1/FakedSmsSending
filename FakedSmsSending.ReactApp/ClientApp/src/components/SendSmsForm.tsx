@@ -13,13 +13,11 @@ export function SendSmsForm({ sendSms }: ISendSmsFormProps) {
 
     const handleSubmit = useCallback((event: React.FormEvent) => {
         event.preventDefault();
-        const smsToSend: ISmsToSend = {
+        sendSms({
             receiverPhoneNo,
             senderName,
             text: smsText
-        };
-        console.log(smsToSend);
-        sendSms(smsToSend);
+        });
         setIsAlreadySent(true);
     }, [receiverPhoneNo, senderName, smsText]);
 
