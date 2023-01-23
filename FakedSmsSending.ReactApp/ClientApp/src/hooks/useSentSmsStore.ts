@@ -6,13 +6,15 @@ import api from '../api';
 export function useSetSmsStore() {
     const API_URL = "SentSmses";
     const [sentSmses, setSentMessages] = useState<ISentSms[]>([]);
-
+    const [sentSmsesListIsLoading, setSentSmsesListIsLoading] = useState(false);
 
     const fetchSentSmses = useCallback(async () => {
+        setSentSmsesListIsLoading(true);
         const data = (await api.get<ISentSms[]>(API_URL)).data;
         // sms.sendingDateTime is Date here in compilation-time, but is string in runtime. Can try axios transformResponse instead.
         data.forEach(sms => sms.sendingDateTime = new Date(sms.sendingDateTime));
         setSentMessages(data);
+        setSentSmsesListIsLoading(false);
     }, []);
 
     const sendNewSms = useCallback(async (smsToSend: ISmsToSend) => {
@@ -29,5 +31,5 @@ export function useSetSmsStore() {
         fetchSentSmses();
     }, [fetchSentSmses]);
 
-    return { sentSmses, sendNewSms }
+    return { sentSmsesListIsLoading, sentSmses, sendNewSms }
 }

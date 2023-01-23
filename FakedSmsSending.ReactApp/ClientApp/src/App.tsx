@@ -5,12 +5,15 @@ import { useSetSmsStore } from './hooks/useSentSmsStore';
 import { SendSmsForm } from './components/SendSmsForm';
 
 function App() {
-    const { sentSmses, sendNewSms } = useSetSmsStore();
+    const { sentSmsesListIsLoading, sentSmses, sendNewSms } = useSetSmsStore();
 
     return (
         <div className="container mx-auto max-w-screen-lg pt-10">
             <SendSmsForm sendSms={sendNewSms} />
-            <SentSmsList sentSmsList={sentSmses}></SentSmsList>
+            <SentSmsList
+                sentSmsList={sentSmses}
+                sentSmsesListIsLoading={sentSmsesListIsLoading}
+            />
         </div>
     )
     /*(
