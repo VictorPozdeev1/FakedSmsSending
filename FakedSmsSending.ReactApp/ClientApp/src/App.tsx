@@ -11,7 +11,7 @@ function App() {
         <div className="container mx-auto max-w-screen-lg pt-10">
             <SendSmsForm sendSms={sendNewSms} />
             <SentSmsList
-                sentSmsList={sentSmses}
+                sentSmsesList={sentSmses}
                 sentSmsesListIsLoading={sentSmsesListIsLoading}
             />
         </div>
