@@ -1,4 +1,4 @@
-﻿namespace Faked_sms_sending.Models;
+﻿namespace FakedSmsSending.Models;
 
 public class SentSms
 {

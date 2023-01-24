@@ -1,7 +1,7 @@
-﻿using Faked_sms_sending.Models;
+﻿using FakedSmsSending.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Faked_sms_sending.Services;
+namespace FakedSmsSending.Services;
 
 public class SentSmsesDbContext : DbContext
 {

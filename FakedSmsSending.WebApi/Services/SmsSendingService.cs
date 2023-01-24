@@ -1,7 +1,7 @@
-﻿using Faked_sms_sending.Models;
+﻿using FakedSmsSending.Models;
 using System.Security.Cryptography;
 
-namespace Faked_sms_sending.Services;
+namespace FakedSmsSending.Services;
 
 public interface ISmsSendingService
 {
