@@ -2,12 +2,12 @@
 import SentSmsListItem from '../components/SentSmsListItem';
 import Loader from "./Loader";
 
-interface ISentSmsListProps {
-    sentSmsList: ISentSms[],
+interface ISentSmsesListProps {
+    sentSmsesList: ISentSms[],
     sentSmsesListIsLoading: boolean
 }
 
-export default function SentSmsList({ sentSmsesListIsLoading, sentSmsList }: ISentSmsListProps) {
+export default function SentSmsList({ sentSmsesListIsLoading, sentSmsesList }: ISentSmsesListProps) {
     const TW_CAPTION_COMMON_CLASSES = "text-2xl font-bold p-5 text-slate-600";
     const TW_TH_COMMON_CLASSES = "border-b font-medium p-4 pt-0 pb-3 text-slate-400 text-left"; //pl-8, ..., ..., pr-8 ?
 
@@ -26,7 +26,7 @@ export default function SentSmsList({ sentSmsesListIsLoading, sentSmsList }: ISe
                     </tr>
                 </thead>
                 <tbody>
-                    {sentSmsList
+                    {sentSmsesList
                         .sort((a, b) => b.sendingDateTime.getTime() - a.sendingDateTime.getTime())
                         .map(m => <SentSmsListItem sentSms={m} key={m.id} />)}
                 </tbody>

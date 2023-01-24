@@ -1,9 +1,9 @@
-﻿using Faked_sms_sending.Models;
-using Faked_sms_sending.Services;
+﻿using FakedSmsSending.Models;
+using FakedSmsSending.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Faked_sms_sending.Controllers
+namespace FakedSmsSending.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

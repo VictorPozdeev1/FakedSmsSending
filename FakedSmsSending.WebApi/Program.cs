@@ -1,4 +1,4 @@
-using Faked_sms_sending.Services;
+using FakedSmsSending.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
