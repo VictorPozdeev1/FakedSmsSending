@@ -17,7 +17,7 @@ export function SendSmsForm({ sendSms }: ISendSmsFormProps) {
         if (!/^\d{11}$/.test(receiverPhoneNo)) {
             validationErrors.push('Номер телефона должен состоять из 11 цифр. Вводите их без пробелов.');
         }
-        if (!/^.+$/.test(smsText)) {
+        if (!/^.+$/m.test(smsText)) {
             validationErrors.push('Текст смс пуст.');
         }
         return validationErrors;
@@ -25,7 +25,9 @@ export function SendSmsForm({ sendSms }: ISendSmsFormProps) {
 
     const handleSubmit = useCallback((event: React.FormEvent) => {
         event.preventDefault();
-        // We don't have to make validation here as long as submit button is disabled if some validation errors were found
+        if (validateFormAndGetValidationErrors().length > 0) {
+            return;
+        }
         sendSms({
             receiverPhoneNo,
             senderName,
@@ -110,7 +112,9 @@ export function SendSmsForm({ sendSms }: ISendSmsFormProps) {
                         value='Отправить смс!'
                     />
                 </div>
-                {validationErrors.map(errorMessage => <FormValidationMessage message={errorMessage} />)}
+                {validationErrors.map(errorMessage =>
+                    <FormValidationMessage message={errorMessage} key={errorMessage} />
+                )}
             </fieldset>
         </form>
     )
